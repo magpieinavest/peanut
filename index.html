@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Peanut</title>
+	<link rel="shortcut icon" href=peanut.png>
+</head>
+
+<meta charset="utf'8">
+<link rel="stylesheet" type="text/css" href="peanut.css">
+
+
+<body>
+	<div>
+		<img src=peanut.png alt="peanut" width="400" height="400" align:center class="floating" id=peanut>
+	</div>
+</body>
+
+
+<script type="text/javascript">
+		var now = new Date();
+		var hours = now.getHours();
+
+		document.bgColor="#CC9900";
+
+		if (hours > 17 && hours < 20){
+		 document.write ('<body style="background-color: FireBrick">');
+		}
+
+		else if (hours > 19 && hours < 22){
+		 document.write ('<body style="background-color: DarkOrange">');
+		}
+
+		else if (hours > 21 || hours < 5){
+		 document.write ('<body style="background-color: GoldenRod">');
+		}
+
+		else if (hours > 8 && hours < 18){
+		 document.write ('<body style="background-color: LawnGreen">');
+		}
+
+		else if (hours > 6 && hours < 9){
+		 document.write ('<body style="background-color: RoyalBlue">');
+		}
+
+		else if (hours > 4 && hours < 7){
+		 document.write ('<body style="background-color: DarkSlateBlue">');
+		}
+		else {
+		 document.write ('<body style="background-color: Violet">');
+		}
+</script>
+
+<script>
+		document.write("<p>");
+		var day = new Date();
+		var hr = day.getHours();
+		if (hr == 1) {
+		 document.write("It's 1AM and this is still a peanut.");
+		}
+		if (hr == 2) {
+		 document.write("It's past 2AM and it's still peanut...");
+		}
+		if (hr == 3) {
+		 document.write("It is after 3AM and it's still a peanut, go to sleep.");
+		}
+		if (hr == 4) {
+		 document.write("It's 4AM and this peanut is still here, why are you?");
+		}
+		if (hr == 5) {
+		 document.write("Whoa! It's almost daylight and this is still a peanut!");
+		}
+		if (hr == 6) {
+		 document.write("Hey, isn't it too early to be checking if this is still a peanut?");
+		}
+		if ((hr == 6) || (hr == 7) || (hr == 8) || (hr == 9) || (hr == 10)) {
+		 document.write("Good Morning human peanut, digital peanut is stil here!");
+		}
+		if (hr == 11) {
+		 document.write("11AM... This peanut says get a life.");
+		}
+		if (hr == 12) {
+		 document.write("NOON! Great, it must be time for you to find out this is still a peanut!");
+		}
+		if (hr == 14) {
+		 document.write("It's 2PM. Have you had lunch or are you still checking if it's a peanut?");
+		}
+		if ((hr == 15) || (hr == 16) || (hr == 13)) {
+		 document.write("Good Afternoon! Digital peanut is still here.");
+		}
+		if ((hr == 17) || (hr == 18) || (hr == 19) || (hr == 20) || (hr == 21) || (hr == 22)) {
+		 document.write("Good Evening! Welcome to peanut land where, you guessed it, the digital peanut lives.");
+		}
+		if (hr == 23) {
+		 document.write("It's almost midnight... Haven't we already established that it's a peanut?");
+		}
+		if (hr==0) {
+		 document.write("It's midnight... do you not have a life? You're becoming a digital peanut yourself.");
+		}
+		document.write("</p>");
+
+</script>
+
+</html>
